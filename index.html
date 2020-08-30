@@ -21,6 +21,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="adivinanza.js"></script>
 </head>
 
 <body id="page-top">
@@ -34,9 +35,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#adivinanza">adivinanza</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
+                    
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -72,6 +76,26 @@
                         Molestias neque, consectetur quisquam porro eveniet quaerat, iste maiores assumenda debitis
                         deserunt, nostrum pariatur id. </p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Adivinanza-->
+    <section class="page-section bg-info" id="adivinanza">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                <form>
+                    <h1 style="color: white;">¿De que color es el caballo blanco de San Martin?</h1>
+                    <input class="form-control" placeholder="Respuesta..." type="text" id="Resp">
+                    <br>
+                    <input class="btn-primary" type="button" value="responder" id="btns" onclick="contar();capturar()">
+                    <input class="btn-primary" type="button" value="Reiniciar" id="btns2" onclick="reiniciar()">
+                </form>
+                <h2 style="color: white;" id="resultado"></h2>
+                <h2 style="color: white;" id="pista1"></h2>
+                <h2 style="color: white;" id="pista2"></h2>
+                <h2 style="color: white;" id="intentos">Tienes: 4 intentos</h2>
                 </div>
             </div>
         </div>
