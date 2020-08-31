@@ -20,6 +20,7 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="adivinanza.js"></script>
 </head>
@@ -37,10 +38,10 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#adivinanza">adivinanza</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
-                    
+
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -82,20 +83,25 @@
     </section>
     <!--Adivinanza-->
     <section class="page-section bg-info" id="adivinanza">
-        <div class="container">
+        <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                <form>
-                    <h1 style="color: white;">¿De que color es el caballo blanco de San Martin?</h1>
-                    <input class="form-control" placeholder="Respuesta..." type="text" id="Resp">
-                    <br>
-                    <input class="btn-primary" type="button" value="responder" id="btns" onclick="contar();capturar()">
-                    <input class="btn-primary" type="button" value="Reiniciar" id="btns2" onclick="reiniciar()">
-                </form>
-                <h2 style="color: white;" id="resultado"></h2>
-                <h2 style="color: white;" id="pista1"></h2>
-                <h2 style="color: white;" id="pista2"></h2>
-                <h2 style="color: white;" id="intentos">Tienes: 4 intentos</h2>
+                    <form>
+                        <h1 style="color: white">¿Quien restauró la catedral de Buenos Aires en 1994?</h1>
+                        <div class="row">
+                            <input class=" form-control " style="width: 70%;" placeholder="Respuesta..." type="text" id="Resp">
+                            <input class="col-lg-3 btn-primary form-control " style="width: 30%;" type="button" value="responder" id="btns"
+                                onclick="contar();capturar()">
+                        </div>
+                        <br>
+                        <h2 style="color: white;" id="resultado"></h2>
+                        <h2 style="color: white;" id="pista1"></h2>
+                        <h1 style="color: white;" id="pista2"></h2>
+                        <h2 class="animated-shadow" id="intentos">Tienes: 4 intentos</h2>
+
+                        <input class="btn-primary form-control col-md-2 offset-md-5 " type="button" value="Reiniciar" id="btns2" onclick="reiniciar()">
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -235,7 +241,7 @@
                 <form style="width: 30%;">
                     <div class="row">
                         <input type="name" class="form-control" placeholder="Nombre" id="">
-        
+
                     </div>
                     <br>
                     <div class="row">
@@ -243,8 +249,8 @@
                     </div>
                     <br>
                     <div class="row">
-                        <input type="email" class="form-control" placeholder="Email"id="emailHelp">
-        
+                        <input type="email" class="form-control" placeholder="Email" id="emailHelp">
+
                     </div>
                     <br>
                     <div class="row">
@@ -258,7 +264,7 @@
             </div>
         </section>
     </section>
-    
+
 
     <!-- Footer-->
     <footer class="bg-light py-5">
