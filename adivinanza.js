@@ -12,7 +12,7 @@ function contar() {
 function capturar() {
     document.getElementById("btns2").disabled = true
     var respuesta = document.getElementById("Resp").value;
-    if (respuesta === "Norberto Silva" ) {
+    if (respuesta === "Norberto Silva"  ) {
         document.getElementById("resultado").innerHTML = ("ganaste!! sos un genio!! era  Norberto Silva!!");
         document.getElementById("btns").disabled = true
         document.getElementById("btns2").disabled = false
